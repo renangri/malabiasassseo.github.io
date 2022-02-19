@@ -1,0 +1,185 @@
+/* News Cards */
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 70px 0; }
+  .news-cards img {
+    width: 100%;
+    height: 180px; }
+  .news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0; }
+  .news-cards a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold; }
+
+/* CARDS BANNER ONE */
+.cards-banner-one {
+  width: 100%;
+  height: 350px;
+  background: url(/img/banner_cerveza.jpg) no-repeat;
+  margin-bottom: 40px; }
+  .cards-banner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #fff; }
+  .cards-banner-one p {
+    margin: 5px; }
+
+.cards-banner-two p {
+  margin: 10px 0 20px 0; }
+
+.cards-banner-two .btn-sabermas {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: white;
+  font-size: 15px;
+  border: 1px solid #fff; }
+
+/* mixin  */
+/* mediaqueries  */
+@media only screen and (max-width: 834px) and (min-width: 415px) {
+  body {
+    font-size: 8px;
+    display: grid;
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; } }
+
+@media all and (max-width: 800px) {
+  .section {
+    flex-direction: column; }
+  .menu {
+    flex-direction: column;
+    height: auto; } }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #000000;
+  background-image: url("http://www.solofondos.com/wp-content/uploads/2015/11/new-fondo1lateral.jpg");
+  color: #1e272e;
+  color: #fff;
+  font-size: 16px;
+  display: grid;
+  /* Responsive Button */
+  /* Boton de Whatsapp */
+  /* footer */ }
+  body header {
+    width: 100%; }
+  body .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none; }
+  body .container {
+    width: 90%;
+    margin: auto;
+    /* Navigation */
+    /* frase */
+    /*  Video */
+    /* SOCIAL*/ }
+    body .container .nav-main {
+      font-size: 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 20px 0;
+      margin-top: 10px; }
+      body .container .nav-main .nav-brand {
+        width: 50px; }
+      body .container .nav-main .nav-menu {
+        flex: 1;
+        margin-left: 20px; }
+      body .container .nav-main ul {
+        display: flex;
+        list-style: none; }
+      body .container .nav-main li {
+        padding: 10px; }
+      body .container .nav-main a {
+        padding: 2px;
+        transition: all 300ms;
+        position: relative;
+        color: #FFFFFF;
+        text-decoration: none; }
+      body .container .nav-main a:hover {
+        border-bottom: 2px solid #DDC91F;
+        color: #DDC91F;
+        transform: scale(1.14); }
+      @media screen and (max-width: 1200px) {
+        body .container .nav-main {
+          background-color: #DDC91F; } }
+    body .container q {
+      padding: 5px;
+      text-align: center;
+      width: 100%;
+      color: #FFFFFF;
+      font-size: 30px;
+      display: block;
+      border: 2px solid #DDC91F;
+      border-color: #DDC91F rgba(255, 255, 255, 0) #DDC91F rgba(255, 255, 255, 0);
+      margin-top: 20px; }
+      @media screen and (max-width: 1200px) {
+        body .container q {
+          background-color: #DDC91F; } }
+    body .container .video {
+      padding: 30px;
+      display: block;
+      flex: 30px;
+      justify-content: space-evenly;
+      text-align: center; }
+    body .container .social {
+      margin: 50px;
+      /*  Boton Arriba */ }
+      body .container .social p {
+        color: #DDC91F;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px; }
+      body .container .social .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; }
+        body .container .social .links a {
+          margin: 0 30px; }
+          body .container .social .links a i {
+            font-size: 3rem; }
+        body .container .social .links .fab {
+          color: #DDC91F; }
+      body .container .social .arriba {
+        text-align: center;
+        background-color: #3b3b3b;
+        color: #FFFFFF;
+        padding: 12px;
+        display: inline-block;
+        text-decoration: none;
+        min-width: 100px;
+        width: 100%;
+        font-family: 'Texturina', serif;
+        margin: 0; }
+  body .Whatsapp {
+    max-width: 200px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px; }
+  body .footer-x {
+    color: #FFFFFF;
+    text-align: center; }

@@ -1,0 +1,230 @@
+    @import "variables";
+    @import "cards";
+    @import "mixins";
+    @import "mediaqueri";
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Oswald", sans-serif;
+        background-color: #000000;
+        background-image: url("http://www.solofondos.com/wp-content/uploads/2015/11/new-fondo1lateral.jpg");
+        color: #1e272e;
+        color: #fff;
+        font-size: 16px;
+        display: grid;
+        header {
+            width: 100%;
+        }
+        /* Responsive Button */
+        .menu-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            z-index: 2;
+            display: none;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            /* Navigation */
+            .nav-main {
+                font-size: 17px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+                padding: 20px 0;
+                margin-top: 10px;
+                .nav-brand {
+                    width: 50px;
+                }
+                .nav-menu {
+                    flex: 1;
+                    margin-left: 20px;
+                }
+                ul {
+                    display: flex;
+                    list-style: none;
+                }
+                li {
+                    padding: 10px;
+                }
+                a {
+                    padding: 2px;
+                    transition: all 300ms;
+                    position: relative;
+                    color: $colorTexto;
+                    text-decoration: none;
+                }
+                a:hover {
+                    border-bottom: 2px solid $colorSegundario;
+                    color: $colorSegundario;
+                    transform: scale(1.14);
+                }
+                @include media-up(xl) {
+                    background-color: $colorSegundario;
+                }
+            }
+            /* frase */
+            q {
+                padding: 5px;
+                text-align: center;
+                width: 100%;
+                color: $colorTexto;
+                font-size: 30px;
+                display: block;
+                border: 2px solid $colorSegundario;
+                border-color: $colorSegundario rgba(255, 255, 255, 0)$colorSegundario rgba(255, 255, 255, 0);
+                margin-top: 20px;
+                @include media-up(xl) {
+                    background-color: $colorSegundario;
+                }
+            }
+            /*  Video */
+            .video {
+                padding: 30px;
+                display: block;
+                flex: 30px;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+            /* SOCIAL*/
+            .social {
+                margin: 50px;
+                p {
+                    color: $colorSegundario;
+                    text-align: center;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                .links {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    a {
+                        margin: 0 30px;
+                        i {
+                            font-size: 3rem;
+                        }
+                    }
+                    .fab {
+                        color: $colorSegundario;
+                    }
+                }
+                /*  Boton Arriba */
+                .arriba {
+                    a {
+                        text-align: center;
+                        background-color: rgb(59, 59, 59);
+                        color: $colorTexto;
+                        padding: 12px;
+                        display: inline-block;
+                        text-decoration: none;
+                        min-width: 100px;
+                        width: 100%;
+                        font-family: 'Texturina', serif;
+                        margin: 0;
+                        a:hover {
+                            color: aqua;
+                        }
+                    }
+                }
+            }
+        }
+        /* Boton de Whatsapp */
+        .Whatsapp {
+            max-width: 200px;
+            position: fixed;
+            right: 20px;
+            bottom: 10px;
+        }
+        /* footer */
+        .footer-x {
+            color: $colorTexto;
+            text-align: center;
+        }
+        @include media-up(lg) {}
+    }
+    /*------------------------------------------------------ Pagina Acerca de Nosotros-------------------------------------------------------------- */
+    /* informacion sobre nosotros */
+    
+    .h1Acerca {
+        text-align: center;
+    }
+    
+    .h2Acerca {
+        text-align: center;
+    }
+    
+    .cards-banner-AN {
+        width: 80%;
+        height: 350px;
+        background: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/01/25/15169052662226.jpg) no-repeat;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .infoNos {
+        width: 100%;
+        height: 450px;
+        background-color: #61616171;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #fff;
+    }
+    
+    .imgSn {
+        width: 80%;
+        height: 55%;
+        margin: 10px;
+    }
+    
+    .pSn {
+        text-align: justify;
+        margin: 15px;
+    }
+    /* imagen de la fabrica */
+    
+    .h2Acerca {
+        margin: 15px;
+    }
+    
+    main {
+        max-width: 800px;
+        padding: 1rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        grid-gap: 1rem;
+    }
+    
+    .muestras {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .item-a {
+        grid-row: 1 / 3;
+    }
+    
+    .item-b {
+        grid-column: 3 / 5;
+    }
+    
+    .item-c {
+        grid-row: 2 / 4;
+    }
+    
+    .item-d {
+        grid-column: 3 / 5;
+    }
